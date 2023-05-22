@@ -587,15 +587,15 @@
                 <h2 class="title_txt">스마트한 공간을 만들어 줄<br>코웨이 스토리</h2>
             </div>
             <div class="con4_box">
-                <ul class="img_list">
-                    <li class="bg1 on"></li>
-                    <li class="bg2 on"></li>
-                    <li class="bg3 on"></li>
-                    <li class="bg4 on"></li>
-                    <li class="bg5 on"></li>
+                <ul class="bg_box">
+                    <li class="bg1"></li>
+                    <li class="bg2"></li>
+                    <li class="bg3"></li>
+                    <li class="bg4"></li>
+                    <li class="bg5"></li>
                 </ul>
                 <ul class="txt_box">
-                    <li class="">
+                    <li class="active ac1">
                         <a href="#none">
                             <span class="num_txt">01</span>
                             <p class="txt_1">방탄소년단이 선택한 코웨이!</p>
@@ -604,7 +604,7 @@
                             </p>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="active ac2">
                         <a href="#none">
                             <span class="num_txt">02</span>
                             <p class="txt_1">관리받는 비데, 룰루!</p>
@@ -613,7 +613,7 @@
                             </p>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="active ac3">
                         <a href="#none">
                             <span class="num_txt">03</span>
                             <p class="txt_1">생생하게 만나는 리얼 고객 후기</p>
@@ -622,7 +622,7 @@
                             </p>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="active ac4">
                         <a href="#none">
                             <span class="num_txt">04</span>
                             <p class="txt_1">더 많은 이야기가 궁금하다면?</p>
@@ -631,7 +631,7 @@
                             </p>
                         </a>
                     </li>
-                    <li class="">
+                    <li class="active ac5">
                         <a href="#none">
                             <span class="num_txt">05</span>
                             <p class="txt_1">BED & RELAX 통합 브랜드</p>
@@ -1260,68 +1260,7 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript">
-        $('.img_box').bxSlider({
-            mode: 'fade',
-            captions: true,
-            auto: true,
-            autoControls: true,
-            stopAutoOnClick: true,
-            pager: true,
-            slideWidth: 1903
-        });
-    </script>
-    <script type="text/javascript">
-        $('.autoplay').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 800,
-        });
-    </script>
-    <script>
-        jQuery(function ($) {
-            $(".txt_box>li>a").on("mouseover focus", function () {
-                $(this).parent().addClass("active").siblings().removeClass('active');
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        $('.item_wrap').slick({
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  centerMode: true,
-  variableWidth: true
-});
-    </script>
-    <script>
-        $('.re_wrap').slick({
-    speed: 100,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true,
-    variableWidth: true,
-    });
-    </script>
-    <script>
-        $('.event_box').slick({
-            speed: 100,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: true,
-            variableWidth: true,
-        });
-    </script>
-    <script>
-        $('.con9_box').slick({
-            speed: 100,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: true,
-            variableWidth: true,
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
